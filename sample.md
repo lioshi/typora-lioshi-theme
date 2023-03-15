@@ -1,4 +1,4 @@
-# Notes Dark theme for Typora
+# lioshi theme for Typora
 
 Regular, *italic*, **bold**, ==highlighted==, `monospace` and <kbd>kbd</kbd>
 
