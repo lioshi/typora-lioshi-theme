@@ -15,8 +15,8 @@
 }
 
 :root {
-  --primary-color: #fcba03;
-  --primary-color-rgb: 252, 186, 3;
+  --primary-color: #e9ecd2;
+  --primary-color-rgb: 233, 236, 210;
 
   --bg-color: #303030;
   --bg-color-dark: #373737;
@@ -26,7 +26,7 @@
   --light-trait-300: #777;
   --light-trait-400: #8c8c8c;
 
-  --text-color: #c9c9c9;
+  --text-color: #c5c8c6;
   --text-color-secondary: #d2d3d3;
   --text-highlight-color: #fff;
   --text-highlight-bg: rgba(var(--primary-color-rgb), 0.3);
@@ -197,6 +197,10 @@ hr {
   box-sizing: content-box;
 }
 
+p > .md-image:only-child:not(.md-img-error) img {
+  margin: 0;
+}
+
 sup.md-footnote {
   background-color: var(--light-trait-400);
   color: var(--light-trait-100);
@@ -243,13 +247,13 @@ mark,
 }
 
 blockquote {
-  margin-left: -14px;
-  margin-right: -14px;
-  border-radius: var(--border-radius);
-  border-left: 4px solid var(--light-trait-300);
-  background-color: var(--light-trait-100);
-  padding: 7px 14px 7px 10px;
-  margin-bottom: 0.8rem;
+  /* margin-left: -14px;
+  margin-right: -14px; */
+  /* border-radius: var(--border-radius); */
+  border-left: 5px solid var(--light-trait-300);
+  /* background-color: var(--light-trait-100); */
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
 }
 
 blockquote blockquote {
@@ -396,9 +400,13 @@ code {
   border: 1px solid var(--light-trait-200);
   border-radius: 50%;
   margin-left: -1.8rem;
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1rem;
+  width: 1rem;
   transition: background 0.3s;
+}
+
+#write .md-task-list-item > input {
+  margin-top: 0;
 }
 
 #write .md-task-list-item > input:focus {
@@ -432,8 +440,14 @@ code {
 }
 
 .md-toc {
-  margin-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.md-toc-content {
+  padding: 0;
 }
 
 /* Source mode */
