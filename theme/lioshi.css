@@ -106,6 +106,7 @@ body {
 #write > p {
   text-indent: 1rem;
   margin-bottom: 0.8rem;
+  text-align: justify;
 }
 
 a {
